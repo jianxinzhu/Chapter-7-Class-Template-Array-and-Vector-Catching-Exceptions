@@ -35,10 +35,15 @@ int main()
 	{
 		for (unsigned int j = i + 1; j < a1.size(); j++)
 		{
-			if (a1[i] == a1[j])
+			if (a1[i] == 0)
+			{
+				continue;
+			}
+			else if (a1[i] == a1[j])
 			{
 				a1[j] = 0;
 			}
+		}
 		}
 	}
 
